@@ -1,12 +1,12 @@
 services:
-caddy:
-  image: caddy:alpine
-  restart: always
-  container_name: caddy
-  volumes:
-    - ./Caddyfile:/etc/caddy/Caddyfile
-    - ./certs:/certs
-    - ./config:/config
-    - ./data:/data
-    - ./sites:/srv
-  network_mode: "host"
+  caddy:
+    image: caddy:alpine
+    restart: always
+    container_name: caddy
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+      - ./certs:/certs
+      - ./config:/config
+      - ./data:/data
+      - ./sites:/srv
+    network_mode: "host"
