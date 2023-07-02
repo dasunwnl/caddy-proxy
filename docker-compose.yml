@@ -11,6 +11,8 @@ services:
       - ./config:/config
       - ./data:/data
       - ./sites:/srv
+    ports:
+      - 443:443
     network_mode: "host"
 
   nextcloud:
